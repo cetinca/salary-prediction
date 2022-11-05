@@ -1,0 +1,21 @@
+<h5 id="description">Description</h5>
+<p>A linear model may predict negative values. However, such values can be meaningless because the salary can't be negative. In this stage, handle negative predictions.</p>
+<h5 id="objectives">Objectives</h5>
+<ol>
+<li>Read the data. For downloading the dataset refer to Stage 1;</li>
+<li>Load data with <code class="java">pandas.read_csv</code>;</li>
+<li>As predictors select those variables that gave the best metric in the previous stage. Make <code class="java">X</code> a dataframe with predictors and <code class="java">y</code> a series with a target. To make <code class="java">X</code>, you must drop target variable from the data.</li>
+<li>Split predictors and the target into train and test parts. Use <code class="java">test_size=0.3</code> and <code class="java">random_state=100</code> — they guarantee that the results will be the same as the test system expects.</li>
+<li>Fit the model that predicts salary based on all other variables;</li>
+<li>Predict the salaries.</li>
+<li>Try two techniques to deal with negative predictions:
+	<ul>
+<li>replace the negative values with <code class="java">0</code>;</li>
+<li>replace the negative values with the median of the training<em> </em>part of <code class="java">y</code>.</li>
+</ul>
+</li>
+<li>Calculate the MAPE for every two options and print the best as a floating number rounded to five digits after the decimal separator.</li>
+</ol>
+<h5 id="example">Example</h5>
+<p><strong>Example 1:</strong> <em>an example of the program output</em></p>
+<pre><code class="language-no-highlight">0.00001</code></pre>

@@ -1,0 +1,14 @@
+<h5 id="description">Description</h5>
+<p>In the previous stages, you used only one independent variable. Now, your task is to include other variables into a model.</p>
+<h5 id="objectives">Objectives</h5>
+<ol>
+<li>Read the data. For downloading the dataset refer to Stage 1;</li>
+<li>Load data with <code class="java">pandas.read_csv</code>;</li>
+<li>Make <code class="java">X</code> a dataframe with predictors and <code class="java">y</code> a series with a target. To make <code class="java">X</code>, you must drop target variable from the data. All other variables are left unchanged.</li>
+<li>Split the predictors and target into training and test parts. Use <code class="java">test_size=0.3</code> and <code class="java">random_state=100</code> — they guarantee that the results will be the same as the test system expects.</li>
+<li>Fit the model predicting salary based on all other variables;</li>
+<li>Print the model coefficients separated by a comma.</li>
+</ol>
+<h5 id="example">Example</h5>
+<p><strong>Example 1:</strong><em> an example output of the program</em></p>
+<pre><code class="language-no-highlight">17.54323e+10, 34543.56776e+05, 12.345, -23413.00987e+13, 0</code></pre>

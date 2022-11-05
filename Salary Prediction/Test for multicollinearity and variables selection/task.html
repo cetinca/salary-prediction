@@ -1,0 +1,16 @@
+<h5 id="description">Description</h5>
+<p>If you have a linear regression with many variables, some of them may be correlated. This way, the performance of the model may decrease. A crucial step is to check the model for multicollinearity and exclude the variables with a strong correlation with other variables. Carry out this check, find the best model by removing the variables with high correlation, and return its MAPE score.</p>
+<h5 id="objectives">Objectives</h5>
+<ol>
+<li>Read the data. For downloading the dataset refer to Stage 1;</li>
+<li>Load the data with <code class="java">pandas.read_csv</code>;</li>
+<li>Calculate the correlation matrix for the numeric variables;</li>
+<li>Find the variables where the correlation coefficient is greater than 0.2. Hint: there should be three of them.</li>
+<li>Make <code class="java">X</code>, a dataframe with all the predictor variables, and <code class="java">y</code>, a series with the target.</li>
+<li>Split the predictors and the target into training and test parts. Use <code class="java">test_size=0.3</code> and <code class="java">random_state=100</code> — they guarantee that the results will be as expected.</li>
+<li>Fit the linear models for salary prediction based on the subsets of other variables. The subsets are as follows. First, try to remove each of the three variables you've found in Stage 4. Second, remove each possible pair of these three variables. For example, if you have found out that the highly correlated variables are <code class="java">x</code>, <code class="java">y</code>, and <code class="java">z</code>, then first you fit a model where <code class="java">x</code> is removed, then a model without <code class="java">y</code>, and then the model without <code class="java">z</code>. After this, you estimate the model without both <code class="java">x</code> and <code class="java">y</code>, then without both <code class="java">y</code> and <code class="java">z</code>, and last, without both <code class="java">x</code> and <code class="java">z</code>. As a result, you will have six models to choose the best from.</li>
+<li>Make predictions and print the lowest MAPE. The MAPE is a floating number rounded to five digits after the decimal separator.</li>
+</ol>
+<h5 id="example">Example</h5>
+<p><strong>Example 1:</strong> <em>an example of the program output</em></p>
+<pre><code class="language-no-highlight">1.11223</code></pre>

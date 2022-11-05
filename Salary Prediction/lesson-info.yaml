@@ -1,0 +1,8 @@
+type: framework
+content:
+- Linear regression with one independent variable
+- Linear regression with predictor transformation
+- Linear regression with many independent variables
+- Test for multicollinearity and variables selection
+- Deal with negative predictions
+current_task: 4

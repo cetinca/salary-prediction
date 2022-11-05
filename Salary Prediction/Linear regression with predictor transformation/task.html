@@ -1,0 +1,17 @@
+<h5 id="description">Description</h5>
+<p>On the scatterplot of <code class="java">rating</code> vs <code class="java">salary</code>, you may have noticed that the relationship between these two variables seems to be different from linear and looks like a polynomial function. Let's try to raise the <code class="java">rating</code> by several degrees and see whether it improves the score.</p>
+<h5 id="objectives">Objectives</h5>
+<ol>
+<li>Read the data. For downloading the dataset refer to Stage 1;</li>
+<li>Load the data with <code class="java">pandas.read_csv</code>;</li>
+<li>Make <code class="java">X</code> a dataframe with a predictor <code class="java">rating</code> and <code class="java">y</code> a series with a target <code class="java">salary</code>;</li>
+<li>Raise predictor to the power of <span class="math-tex">\(2\)</span>.</li>
+<li>Split the predictors and target into training and test parts. Use <code class="java">test_size=0.3</code> and <code class="java">random_state=100</code> parameters — they guarantee that the results will be as expected;</li>
+<li>Fit the linear model of <code class="java">salary</code> on <code class="java">rating</code>, make predictions and calculate the MAPE;</li>
+<li>Repeat steps 2–5 for the power of 3 and 4;</li>
+<li>Print the best MAPE obtained by fitting and running the models described above. The MAPE is a float number rounded to five digits after the dot.</li>
+</ol>
+<p></p><div class="alert alert-primary">MAPE is a loss function therefore the less the value of MAPE is the better the model's performance.</div>
+<h5 id="example">Example</h5>
+<p><strong>Example 1:</strong><em> an example of the program output</em></p>
+<pre><code class="language-no-highlight">1.23456</code></pre>
